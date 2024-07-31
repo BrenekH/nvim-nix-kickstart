@@ -24,15 +24,15 @@ opt.cursorline = true
 opt.lazyredraw = true
 opt.showmatch = true -- Highlight matching parentheses, etc
 opt.incsearch = true
-opt.hlsearch = true
+opt.hlsearch = false
 
 opt.spell = true
-opt.spelllang = 'en'
+opt.spelllang = 'en_us'
 
 opt.expandtab = true
-opt.tabstop = 2
-opt.softtabstop = 2
-opt.shiftwidth = 2
+opt.tabstop = 4
+-- opt.softtabstop = 4
+opt.shiftwidth = 4
 opt.foldenable = true
 opt.history = 2000
 opt.nrformats = 'bin,hex' -- 'octal'
@@ -40,6 +40,15 @@ opt.undofile = true
 opt.splitright = true
 opt.splitbelow = true
 opt.cmdheight = 0
+
+-- Extra Options I Added
+opt.mouse = 'a'
+opt.breakindent = true
+opt.ignorecase = true
+opt.smartcase = true
+opt.updatetime = 250
+opt.signcolumn = 'yes'
+opt.completeopt = 'menuone,noselect'
 
 opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 
