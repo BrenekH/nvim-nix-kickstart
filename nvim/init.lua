@@ -12,6 +12,7 @@ opt.compatible = false
 if fn.has('termguicolors') then
   opt.termguicolors = true
 end
+cmd [[colorscheme onedark]]
 
 -- See :h <option> to see what the options do
 
