@@ -83,6 +83,9 @@ with final.pkgs.lib; let
     comment-nvim # "gc" to comment visual regions/lines
     vim-sleuth   # Detect tabstop and shiftwidth automatically
     onedark-nvim
+
+    rust-vim
+    rustaceanvim
   ];
 
   extraPackages = with pkgs; [
