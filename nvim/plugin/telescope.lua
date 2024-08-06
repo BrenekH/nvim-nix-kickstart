@@ -113,11 +113,8 @@ telescope.setup {
     layout_config = layout_config,
     mappings = {
       i = {
-        ['<C-q>'] = actions.send_to_qflist,
-        ['<C-l>'] = actions.send_to_loclist,
-        -- ['<esc>'] = actions.close,
-        ['<C-s>'] = actions.cycle_previewers_next,
-        ['<C-a>'] = actions.cycle_previewers_prev,
+        ['<C-u>'] = false,
+        ['<C-d>'] = false,
       },
       n = {
         q = actions.close,
