@@ -83,12 +83,21 @@ with final.pkgs.lib; let
     # (mkNvimPlugin inputs.wf-nvim "wf.nvim") # (example) keymap hints | https://github.com/Cassin01/wf.nvim
     # ^ bleeding-edge plugins from flake inputs
     which-key-nvim
+
+    comment-nvim # "gc" to comment visual regions/lines
+    vim-sleuth # Detect tabstop and shiftwidth automatically
+    onedark-nvim
+
+    rust-vim
+    rustaceanvim
   ];
 
   extraPackages = with pkgs; [
     # language servers, etc.
     lua-language-server
     nil # nix LSP
+
+    rust-analyzer
   ];
 in {
   # This is the neovim derivation
