@@ -28,29 +28,20 @@ local function extra_mode_status()
 end
 
 require('lualine').setup {
+  globalstatus = true,
+  sections = {
+    lualine_c = {
+      -- nvim-navic
+      { navic.get_location, cond = navic.is_available },
+    },
+    lualine_z = {
+      -- (see above)
+      { extra_mode_status },
+    },
+  },
   options = {
-    icons_enabled = false,
-    -- theme = 'onedark',
-    component_separators = '|',
-    section_separators = '',
-  }
-}
-
--- require('lualine').setup {
---   globalstatus = true,
---   sections = {
---     lualine_c = {
---       -- nvim-navic
---       { navic.get_location, cond = navic.is_available },
---     },
---     lualine_z = {
---       -- (see above)
---       { extra_mode_status },
---     },
---   },
---   options = {
---     theme = 'auto',
---   },
+    theme = 'auto',
+  },
   -- Example top tabline configuration (this may clash with other plugins)
   -- tabline = {
   --   lualine_a = {
@@ -82,15 +73,15 @@ require('lualine').setup {
   --   lualine_y = {},
   --   lualine_z = {},
   -- },
---   winbar = {
---     lualine_z = {
---       {
---         'filename',
---         path = 1,
---         file_status = true,
---         newfile_status = true,
---       },
---     },
---   },
---   extensions = { 'fugitive', 'fzf', 'toggleterm', 'quickfix' },
--- }
+  winbar = {
+    lualine_z = {
+      {
+        'filename',
+        path = 1,
+        file_status = true,
+        newfile_status = true,
+      },
+    },
+  },
+  extensions = { 'fugitive', 'fzf', 'toggleterm', 'quickfix' },
+}

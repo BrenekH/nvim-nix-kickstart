@@ -7,5 +7,3 @@ vim.g.did_load_plugins_plugin = true
 -- even with default configs
 
 require('nvim-surround').setup()
-require('which-key').setup()
-require('Comment').setup()
