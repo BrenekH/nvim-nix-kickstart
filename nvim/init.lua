@@ -44,7 +44,6 @@ opt.signcolumn = 'yes'
 opt.completeopt = 'menuone,noselect'
 
 opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
-opt.colorcolumn = '100'
 
 -- Configure Neovim diagnostic messages
 
