@@ -99,6 +99,7 @@ with final.pkgs.lib; let
     nil # nix LSP
 
     rust-analyzer
+    ripgrep
   ];
 in {
   # This is the neovim derivation

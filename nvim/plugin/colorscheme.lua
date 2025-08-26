@@ -12,4 +12,4 @@ require("tokyonight").setup({
 });
 
 -- Tokyo Night has variations: night, moon, day, storm
-vim.cmd.colorscheme("tokyonight-moon");
+vim.cmd.colorscheme("tokyonight-night");
