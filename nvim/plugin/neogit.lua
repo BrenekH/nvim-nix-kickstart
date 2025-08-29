@@ -1,3 +1,6 @@
+-- Disable loading neogit
+vim.g.did_load_neogit_plugin = true
+
 if vim.g.did_load_neogit_plugin then
   return
 end
