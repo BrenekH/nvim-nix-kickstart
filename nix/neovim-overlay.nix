@@ -99,7 +99,6 @@ with final.pkgs.lib; let
     lua-language-server
     nil # nix LSP
 
-    rust-analyzer
     ripgrep
   ];
 in {
