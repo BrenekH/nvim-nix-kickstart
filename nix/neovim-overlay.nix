@@ -100,6 +100,7 @@ with final.pkgs.lib; let
     nil # nix LSP
 
     ripgrep
+    tree-sitter
   ];
 in {
   # This is the neovim derivation
