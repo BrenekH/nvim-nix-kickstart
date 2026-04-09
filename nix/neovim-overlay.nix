@@ -92,6 +92,8 @@ with final.pkgs.lib; let
 
     rust-vim
     rustaceanvim
+
+    typst-preview-nvim # https://github.com/chomosuke/typst-preview.nvim
   ];
 
   extraPackages = with pkgs; [
