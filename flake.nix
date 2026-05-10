@@ -36,6 +36,7 @@
           # The generated file can be symlinked in the devShell's shellHook.
           inputs.gen-luarc.overlays.default
         ];
+        config.allowUnfree = true;
       };
       shell = pkgs.mkShell {
         name = "nvim-devShell";
